@@ -1,0 +1,33 @@
+{
+  "name": "Stethoscope App API",
+  "version": "0.2.6",
+  "description": "Node.js backend API for Stethoscope",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "aws-sdk": "^2.131.0",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "2.5.6",
+    "express": "4.15.2",
+    "express-session": "^1.15.3",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "morgan": "^1.8.2",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-local": "^1.0.0",
+    "password-hash": "^1.2.2",
+    "path": "^0.12.7",
+    "pg": "^6.4.0"
+  }
+}

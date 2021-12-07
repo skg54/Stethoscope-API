@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese' rel='stylesheet' type='text/css'>
+	<title>Stethoscope Recordings</title>
+
+	<style type="text/css">
+		
+		.container {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			border-bottom: 1px solid #e0e1e2;
+			border-left: 1px solid #e0e1e2;
+			border-right: 1px solid #e0e1e2;
+			font-family: 'Roboto', serif;
+			font-size: 15px;
+		}
+
+		.container .header {
+			height: 110px;
+		}
+
+		.container img {
+			width: 100px;
+			margin-left: 25px;
+			margin-top: 10px;
+			float: left;
+		}
+
+		.container h2 {
+			padding: 5px 15px;
+			font-size: 20px;
+			margin-top: 38px;
+			float: left;
+		}
+
+		.container h3 {
+			font-size: 18px;
+			margin: 20px 0 0 0;
+		}
+
+		.container ul {
+			list-style: none;
+			padding: 0 30px;
+			line-height: 25px;
+			font-size: 16px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="header">
+		<img src="/appIcon.png">
+		<h2>Stethoscope Recordings</h2>
+	</div>
+
+
+<ul>
+    <% uploads.reverse().forEach(function(r) { %>
+		<h3><%= r.day %></h3>
+   		<% r.recordings.forEach(function(upload) { %>
+        	<li>
+        		<%= upload.name %> - <%= upload.region %> - <%= upload.duration %> - <a href=<%= upload.url %> target="_blank" download>Audio File</a>
+        	</li>
+    	<% }); %>
+    <% }); %>
+</ul>
+
+</div>
+
+</body>
+</html>
