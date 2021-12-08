@@ -1,9 +1,6 @@
 
 ### Fields
-Moneyline, Overunder, Point Spread Odds (Home & Away Team), Average Team Scoring (Home & Away Team), Home Pitcher ID (ESPN ver), Away Pitcher ID (ESPN ver), Hometeam abbrev name, Awayteam abbrev name
-
-### Output
-In CSV or JSON
+Node.js backend API powering a Stethoscope app, built both the iOS app and API as freelance dev.
 
 
 [<img src="https://github.com/skg54/Stethoscope-API/blob/main/static/stethAppIcon.png" width="140"/>](https://github.com/skg54/Stethoscope-API/blob/main/static/stethAppIcon.png)
