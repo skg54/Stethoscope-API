@@ -1,6 +1,6 @@
 
 ### About
-Node.js backend API powering a Stethoscope app, built both the iOS app and API as freelance dev.
+Node.js backend API powering a Stethoscope app, built both the iOS app and backend API as freelance dev.
 
 
 [<img src="https://github.com/skg54/Stethoscope-API/blob/main/static/stethAppIcon.png" width="140"/>](https://github.com/skg54/Stethoscope-API/blob/main/static/stethAppIcon.png)
